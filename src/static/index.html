@@ -3,48 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mergington High School Activities</title>
+    <title>Mergington High School Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Mergington High School</h1>
-      <h2>Extracurricular Activities</h2>
+    <header class="page-header homepage-header">
+      <div class="header-inner">
+        <div>
+          <h1>Mergington High School</h1>
+          <p>Connecting students with clubs, teams, and activities that spark curiosity and community.</p>
+        </div>
+        <a class="button button-primary" href="activities.html">View Activities</a>
+      </div>
     </header>
 
-    <main>
-      <section id="activities-container">
-        <h3>Available Activities</h3>
-        <div id="activities-list">
-          <!-- Activities will be loaded here -->
-          <p>Loading activities...</p>
+    <main class="homepage-main">
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Student Life &amp; Activities</p>
+          <h2>Explore the activities that make school memorable.</h2>
+          <p class="hero-text">
+            From art and drama to math and sports, Mergington High School offers extracurricular experiences designed to build confidence, teamwork, and leadership.
+          </p>
+          <div class="cta-group">
+            <a class="button button-primary" href="activities.html">Browse Activities</a>
+            <a class="button button-secondary" href="#highlights">Why Join?</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div>
+            <h3>Featured Opportunities</h3>
+            <ul>
+              <li>Chess Club - strategy, tournaments, and team play</li>
+              <li>Programming Class - build projects and learn coding fundamentals</li>
+              <li>Drama Club - perform, direct, and collaborate on school plays</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section id="signup-container">
-        <h3>Sign Up for an Activity</h3>
-        <form id="signup-form">
-          <div class="form-group">
-            <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
-          </div>
-          <div class="form-group">
-            <label for="activity">Select Activity:</label>
-            <select id="activity" required>
-              <option value="">-- Select an activity --</option>
-              <!-- Activity options will be loaded here -->
-            </select>
-          </div>
-          <button type="submit">Sign Up</button>
-        </form>
-        <div id="message" class="hidden"></div>
+      <section id="highlights" class="section-panel homepage-panel">
+        <h3>What Makes Our Activities Special</h3>
+        <div class="highlight-grid">
+          <article class="feature-card">
+            <h4>Hands-on Learning</h4>
+            <p>Students gain practical experience through club projects, competitions, and performance opportunities.</p>
+          </article>
+          <article class="feature-card">
+            <h4>Community &amp; Leadership</h4>
+            <p>Every activity encourages students to collaborate, lead, and support each other.</p>
+          </article>
+          <article class="feature-card">
+            <h4>Flexible Participation</h4>
+            <p>Options span cultural, academic, and athletic interests so every student can find their fit.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel homepage-panel">
+        <h3>Ready to get started?</h3>
+        <p>
+          Our extracurricular program is a great place to try something new, build skills, and connect with friends. Use the activities page to see available programs and sign up in seconds.
+        </p>
+        <div class="cta-group">
+          <a class="button button-primary" href="activities.html">Go to Activities</a>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2026 Mergington High School</p>
     </footer>
-
-    <script src="app.js"></script>
   </body>
 </html>
